@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: red; */
+}
+body{
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(#87ceeb,#ffc5c5);
+}
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+.left-container h2{
+    font-weight: 700px;
+    color: #a363aa;
+    font-size: 40px;margin-bottom: 5px;
+
+}
+.left-container hr{
+    border: none;
+    width: 120px;
+    background-color: #a363aa;
+    height: 5px;
+    border-radius: 10px;
+}
+.contact-inputs,textarea{
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0px;
+    outline: none;
+    padding-left: 25px;
+    color: #666;
+    font-weight: 600;
+}
+.left-container textarea{
+    height: 140px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.left-container button{
+    border: 0px;
+    outline: none;
+    background: linear-gradient(270deg, #ff994f,#fabd86 );
+    font-size: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.contact-inputs:focus, textarea:focus{
+    border: 2px solid #ff994f;
+}
+.left-container button:hover{
+    filter: brightness(120%);
+    font-weight: 800;
+}
+@media (max-width:800px){
+    .right-container{
+        display: none;
+    }
+}
+    
